@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://getbootstrap.com/examples/offcanvas/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="http://getbootstrap.com/favicon.ico"> -->
+
+    <title>ADCS2017</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/offcanvas.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script><style type="text/css"></style>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-61068668-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <a class="navbar-brand" href="#">#ADCS2017</a> -->
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cfp.html">Call for Papers</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li class="active"><a href="keynotes.html">Keynotes</a></li>
+            <li><a href="loc_reg.html">Location & Registration</a></li>
+            <li><a href="committee.html">Committee</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="students.html">Students</a></li>
+            <li><a href="presenters.html">Info for Presenters</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+<!-- 
+- home
+- cfp & submissions
+- program
+- keynotes
+- location and registration
+- organising committee
+- information for presenters -->
+
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-12 col-sm-8">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle sidebar</button>
+          </p>
+          
+          <div class="row">
+            <div class="col-xs-12 col-sm-12">
+              <h2>Keynote Presentations</h2>
+
+              <h3><i>Quantum Haystacks Revisited</i></h3>
+              <h4><a href="http://www.quantum-interaction.org/bruza/blogsite/index.html">Peter Bruza</a> (<a href="https://twitter.com/pbruza">@pbruza</a>), Queensland University of Technology.</h4>
+              <h5>Wednesday 2, 9.15-10.30 am</h5>
+              <img src="img/bruza.jpg" class="keynote">
+              <p>
+                Almost ten years ago, Keith van Rijsbergen delivered a Salton Award keynote with the intriguing title “Quantum Haystacks”. In this talk he put forward the idea that quantum theory could inspire a “design language for IR”. As a consequence, this design language relies on quantum logic and quantum probabilities, rather than the classical probabilities that underpin much of IR theory. The aim of this talk is to revisit quantum haystacks.  It will put forward the idea that quantum theory can inspire a “design language for the IR user”. By drawing on developments in the emerging field of quantum cognition, theory and empirical evidence will be provided that quantum probabilities more naturally express human conceptual processing and decision making. As both of these pertain to the information seeking user, implications for the development of formal IR user models will be presented. </p>
+
+            <h5>Chair: Falk Scholer</h5>
+
+
+            </br>
+            <h3><i>The Great Search Bake Off</i></h3>
+              <h4><a href="http://research.microsoft.com/en-us/people/pbailey/">Peter Bailey</a> (<a href="https://twitter.com/peter_r_bailey">@peter_r_bailey</a>), Microsoft.</h4>
+              <h5>Thursday 3, 9.15-10.30 am</h5>
+              <img src="img/bailey.jpg" class="keynote">
+              <p> A major access divide has opened up between the academic and commercial Web search communities over the last 10-15 years due to the availability and importance of large scale search log user data in understanding certain types of search behavior. At the same time, the success and simplicity of Cranfield-inspired IR test collection experimentation methods has encouraged our research publication community to chase marginal gains of the latest effectiveness metric. However, experimentation based on test collections remains fundamentally essential in carrying out cost-effective development of search system algorithms. The real challenge and opportunity for all IR researchers, be they academic or industrial, is to improve the external validity of our experimental outcomes. The users of search systems, and their unfailing and surprising variability, have too often been overlooked when developing test collections. Based on a range of research that sits at the intersection of academic and industrial investigations, I hope to persuade you of the centrality of users in search evaluation, and the opportunities to integrate them more within our familiar experimental frameworks.</p>
+
+            <h5>Chair: Aixin Sun</h5>
+
+
+            </div><!--/.col-xs-6.col-lg-4-->
+            
+          </div><!--/row-->
+        </div><!--/.col-xs-12.col-sm-9-->
+
+        <div class="col-xs-6 col-sm-4 sidebar-offcanvas" id="sidebar">
+          <h3>Important Dates</h3>
+          <!-- <table class="table table-hover"> -->
+          <table class="table table-condensed">
+            <tbody>
+             <tr>
+                <td>Paper submission deadline</td>
+                <td><strike>26 Jul 2017</strike></td>
+              </tr>
+              <tr>
+                <td>Posters and demos submission deadline</td>
+                <td><strike>26 Jul 2017</strike></td>
+              </tr>
+              <tr>
+                <td>Notification of acceptance</td>
+                <td><strike>28 Aug 2017</strike></td>
+              </tr>
+              <tr>
+                <td>Camera ready</td>
+                <td><strike>4 Sep, 2017</strike></td>
+              </tr>
+              <tr>
+                <td>Early bird registration closes</td>
+                <td><strike>26 Sep 2017</strike></td>
+              </tr>
+              <tr>
+                <td>Normal Registration closes</td>
+                <td><strike>31 Oct 2017</strike></td>
+              </tr>
+              <tr>
+                <td>Late/On site Registration</td>
+                <td>1 Nov - 4 Dec 2017</td>
+              </tr>
+                <td>Conference</td>
+                <td>2-4 Dec, 2017</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Latest on #ADCS2017</h3>
+
+          <a class="twitter-timeline" href="https://twitter.com/bevan_koopman" data-widget-id="578811861044350976">Tweets by @airs2017</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+                        
+                        <a href="http://www.qut.edu.au"><img src="img/qut_logo_2lines.jpg"></a> <a href="http://www.sigir.org"><img src="img/acm_sigir_logo.png"></a> <a href="http://aehrc.com"><img src="img/AEHRC.png"></a><a href="http://www.springer.com"><img src="img/springer_logo.gif"></a>
+              
+      </footer>
+
+    </div><!--/.container-->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="js/offcanvas.js"></script>
+  
+
+</body></html>
