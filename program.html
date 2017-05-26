@@ -18,26 +18,14 @@
     <link href="css/offcanvas.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="js/ie-emulation-modes-warning.js"></script><style type="text/css"></style>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-61068668-1', 'auto');
-      ga('send', 'pageview');
-
+   <script src="js/jquery.min.js"></script> 
+    <script> 
+    $(function(){
+      $("#navbarContent").load("navbar.html"); 
+      $("#sidebarContent").load("sidebar.html"); 
+      $("#footerContent").load("footer.html");
+    });
     </script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
@@ -52,19 +40,7 @@
           </button>
           <!-- <a class="navbar-brand" href="#">#ADCS2017</a> -->
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cfp.html">Call for Papers</a></li>
-            <li class="active"><a href="program.html">Program</a></li>
-            <li><a href="keynotes.html">Keynotes</a></li>
-            <li><a href="loc_reg.html">Location & Registration</a></li>
-            <li><a href="committee.html">Committee</a></li>
-            <li><a href="sponsors.html">Sponsors</a></li>
-            <li><a href="students.html">Students</a></li>
-            <li><a href="presenters.html">Info for Presenters</a></li>
-          </ul>
-        </div><!-- /.nav-collapse -->
+        <div id="navbarContent"></div>
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
 <!-- 
@@ -108,6 +84,50 @@
 .tg .tg-hxtd{background-color:#96fffb;vertical-align:top}
 .tg .tg-93t1{background-color:#68cbd0;vertical-align:top}
 </style>
+
+<p>More closer to the conference.</p>
+<!-- 
+  
+      
+      <h2>Accepted Papers</h2>
+       <h3>Full Papers</h3>
+       <p>
+       <ul>
+       <li>Paper 5: Tetsuya Sakai, Lifeng Shang, Zhengdong Lu and Hang Li, <b>Topic Set Size Design with the Evaluation Measures for Short Text Conversation</b></li>
+       <li>Paper 8: Ye Meng, Peng Zhang, Dawei Song and Yuexian Hou, <b>A Study of Collection-based Features for Adapting the Balance Parameter in Pseudo Relevance Feedback</b></li>
+       <li>Paper 9: Nan Tian, Yue Xu, Yuefeng Li, and Gabriella Pasi, <b>Quality-Aware Review Selection based on Product Feature Taxonomy</b></li>
+       <li>Paper 22: Xingshen Song, Xueping Zhang, Yuexiang Yang, Jicheng Quan and Kun Jiang, <b>On Structures of Inverted Index for Query Processing Efficiency</b></li>
+       <li>Paper 23: Wenhao Zhang, <b>Large-scale Sentiment Analysis with Locality Sensitive BitHash</b></li>
+       <li>Paper 24: Fumiyo Fukumoto and Yoshimi Suzuki, <b>Smoothing Temporal difference for Text Categorization</b></li>
+       <li>Paper 28: Chao Lv, Runwei Qiang, Feifan Fan and Jianwu Yang, <b>Knowledge-based Query Expansion in Real-Time Microblog Search</b></li>
+       <li>Paper 39: Wenya Zhang, Dawei Song, Peng Zhang, Xiaozhao Zhao and Yuexian Hou, <b>A Sequential Latent Topic-based Readability Model for Domain-Specific Information Retrieval</b></li>
+       <li>Paper 40: Shabanali Faghani, Ali Hadian, and Behrouz Minaei-Bidgoli, <b>Charset Encoding Detection of HTML Documents: A Practical Experience</b></li>
+       <li>Paper 45: Diyah Puspitaningrum, Fauzi, Boko Susilo, Jeri Apriansyah Pagua, Aan Erlansari, Desi Andreswari, Rusdi Efendi and I.S.W.B. Prasetya, <b>An MDL-based Frequent Itemset Hierarchical Clustering Technique to Improve Query Search Results of An Individual Search Engine</b></li>
+       <li>Paper 46: Haikun Mou, Qian Geng, Jian Jin and Chong Chen, <b>An Author Subject Topic Model for Expert Recommendation</b></li>
+       <li>Paper 52: Mohsen Pourvali, Salvatore Orlando, and Mehrad Gharagozloo, <b>Improving clustering quality by automatic text summarization</b></li>
+       <li>Paper 53: Yi Liao, Shoaib Jameel, Wai Lam, and Xing Xie, <b>Abstract Venue Concept Detection from Location-Based Social Networks</b></li>
+       <li>Paper 54: Feifan Fan, Runwei Qiang, Chao Lv, Wayne Xin Zhao and Jianwu Yang, <b>Tweet Timeline Generation via Graph-based Dynamic Greedy Clustering</b></li>
+       <li>Paper 55: Hind Almerekhi and Tamer Elsayed, <b>Detecting Automatically-Generated Arabic Tweets</b></li>
+       <li>Paper 56: Maram Hasanain, Tamer Elsayed and Walid Magdy, <b>Improving Tweet Timeline Generation by Predicting Optimal Retrieval Depth</b></li>
+       <li>Paper 60: Wanqiu Kou, Fang Li, and Timothy Baldwin, <b>Automatic Labelling of Topic Models using Word Vectors and Letter Trigram Vectors</b></li>
+       <li>Paper 66: Teerapong Leelanupab, Hannarin Kruajirayu and Nont Kanungsukkasem, <b>Snapboard: A Shared Space of Visual Snippets. A Study in Individual and Asynchronous Collaborative Web Search</b></li>
+       <li>Paper 74: Tomohiro Manabe and Keishi Tajima, <b>Heading-Aware Snippet Generation for Web Search</b></li>
+       <li>Paper 76: Matthias Petri, Alistair Moffat, P. C. Nagesh and Anthony Wirth, <b>Access Time Tradeoffs in Archive Compression</b></li>
+       <li>Paper 79: Yangjie Yao and Aixin Sun, <b>A Study of Visual and Semantic Similarity for Social Image Search Recommendation</b></li>
+       <li>Paper 80: Youichi Ishida, Toshiyuki Shimizu and Masatoshi Yoshikawa, <b>A Keyword Recommendation Method Using CorKeD Words and Its Application to Earth Science Data</b></li>
+       <li>Paper 81: M. Atif Qureshi, Arjumand Younus, Colm O’Riordan and Gabriella Pasi, <b>Company Name Disambiguation in Tweets: a Two-Step Filtering Approach</b></li>
+       <li>Paper 83: Kezban Dilek Onal, Ismail Sengor Altingovde and Pinar Karagoz, <b>Utilizing Word Embeddings for Result Diversification in Tweet Search</b></li>
+       <li>Paper 84: Paul Thomas, Peter Bailey, Alistair Moffat and Falk Scholer, <b>Towards Nuanced System Evaluation Based on Implicit User Expectations</b></li>
+       <li>Paper 85: Ashraf Bah and Ben Carterette, <b>Improving Ranking and Robustness of Search Systems by Exploiting the Popularity of Documents</b></li>
+       <li>Paper 86: Grace E. Lee, Keejun Han and Mun Y. Yi, <b>Incorporating Distinct Opinions in Content Recommender System</b></li>
+       <li>Paper 87: Shuhei Shogen, Toshiyuki Shimizu and Masatoshi Yoshikawa, <b>Enrichment of Academic Search Engine Results Pages by Citation-based Graphs</b></li>
+       <li>Paper 90: Zak Waters, Vitomir Kovanovic, Kirsty Kitto and Dragan Gasevic, <b>Structure matters: Adoption of structured classification approach in the context of cognitive presence classification</b></li>
+       </ul>
+      </p>
+      <br>
+ -->
+
+<!-- 
 <table class="tg">
   <tr>
     <th class="tg-yw4l"></th>
@@ -288,46 +308,7 @@
 </p>
 <br>
 
-		<!-- 
-	
-			
-			<h2>Accepted Papers</h2>
-			 <h3>Full Papers</h3>
-			 <p>
-			 <ul>
-			 <li>Paper 5: Tetsuya Sakai, Lifeng Shang, Zhengdong Lu and Hang Li, <b>Topic Set Size Design with the Evaluation Measures for Short Text Conversation</b></li>
-			 <li>Paper 8: Ye Meng, Peng Zhang, Dawei Song and Yuexian Hou, <b>A Study of Collection-based Features for Adapting the Balance Parameter in Pseudo Relevance Feedback</b></li>
-			 <li>Paper 9: Nan Tian, Yue Xu, Yuefeng Li, and Gabriella Pasi, <b>Quality-Aware Review Selection based on Product Feature Taxonomy</b></li>
-			 <li>Paper 22: Xingshen Song, Xueping Zhang, Yuexiang Yang, Jicheng Quan and Kun Jiang, <b>On Structures of Inverted Index for Query Processing Efficiency</b></li>
-			 <li>Paper 23: Wenhao Zhang, <b>Large-scale Sentiment Analysis with Locality Sensitive BitHash</b></li>
-			 <li>Paper 24: Fumiyo Fukumoto and Yoshimi Suzuki, <b>Smoothing Temporal difference for Text Categorization</b></li>
-			 <li>Paper 28: Chao Lv, Runwei Qiang, Feifan Fan and Jianwu Yang, <b>Knowledge-based Query Expansion in Real-Time Microblog Search</b></li>
-			 <li>Paper 39: Wenya Zhang, Dawei Song, Peng Zhang, Xiaozhao Zhao and Yuexian Hou, <b>A Sequential Latent Topic-based Readability Model for Domain-Specific Information Retrieval</b></li>
-			 <li>Paper 40: Shabanali Faghani, Ali Hadian, and Behrouz Minaei-Bidgoli, <b>Charset Encoding Detection of HTML Documents: A Practical Experience</b></li>
-			 <li>Paper 45: Diyah Puspitaningrum, Fauzi, Boko Susilo, Jeri Apriansyah Pagua, Aan Erlansari, Desi Andreswari, Rusdi Efendi and I.S.W.B. Prasetya, <b>An MDL-based Frequent Itemset Hierarchical Clustering Technique to Improve Query Search Results of An Individual Search Engine</b></li>
-			 <li>Paper 46: Haikun Mou, Qian Geng, Jian Jin and Chong Chen, <b>An Author Subject Topic Model for Expert Recommendation</b></li>
-			 <li>Paper 52: Mohsen Pourvali, Salvatore Orlando, and Mehrad Gharagozloo, <b>Improving clustering quality by automatic text summarization</b></li>
-			 <li>Paper 53: Yi Liao, Shoaib Jameel, Wai Lam, and Xing Xie, <b>Abstract Venue Concept Detection from Location-Based Social Networks</b></li>
-			 <li>Paper 54: Feifan Fan, Runwei Qiang, Chao Lv, Wayne Xin Zhao and Jianwu Yang, <b>Tweet Timeline Generation via Graph-based Dynamic Greedy Clustering</b></li>
-			 <li>Paper 55: Hind Almerekhi and Tamer Elsayed, <b>Detecting Automatically-Generated Arabic Tweets</b></li>
-			 <li>Paper 56: Maram Hasanain, Tamer Elsayed and Walid Magdy, <b>Improving Tweet Timeline Generation by Predicting Optimal Retrieval Depth</b></li>
-			 <li>Paper 60: Wanqiu Kou, Fang Li, and Timothy Baldwin, <b>Automatic Labelling of Topic Models using Word Vectors and Letter Trigram Vectors</b></li>
-			 <li>Paper 66: Teerapong Leelanupab, Hannarin Kruajirayu and Nont Kanungsukkasem, <b>Snapboard: A Shared Space of Visual Snippets. A Study in Individual and Asynchronous Collaborative Web Search</b></li>
-			 <li>Paper 74: Tomohiro Manabe and Keishi Tajima, <b>Heading-Aware Snippet Generation for Web Search</b></li>
-			 <li>Paper 76: Matthias Petri, Alistair Moffat, P. C. Nagesh and Anthony Wirth, <b>Access Time Tradeoffs in Archive Compression</b></li>
-			 <li>Paper 79: Yangjie Yao and Aixin Sun, <b>A Study of Visual and Semantic Similarity for Social Image Search Recommendation</b></li>
-			 <li>Paper 80: Youichi Ishida, Toshiyuki Shimizu and Masatoshi Yoshikawa, <b>A Keyword Recommendation Method Using CorKeD Words and Its Application to Earth Science Data</b></li>
-			 <li>Paper 81: M. Atif Qureshi, Arjumand Younus, Colm O’Riordan and Gabriella Pasi, <b>Company Name Disambiguation in Tweets: a Two-Step Filtering Approach</b></li>
-			 <li>Paper 83: Kezban Dilek Onal, Ismail Sengor Altingovde and Pinar Karagoz, <b>Utilizing Word Embeddings for Result Diversification in Tweet Search</b></li>
-			 <li>Paper 84: Paul Thomas, Peter Bailey, Alistair Moffat and Falk Scholer, <b>Towards Nuanced System Evaluation Based on Implicit User Expectations</b></li>
-			 <li>Paper 85: Ashraf Bah and Ben Carterette, <b>Improving Ranking and Robustness of Search Systems by Exploiting the Popularity of Documents</b></li>
-			 <li>Paper 86: Grace E. Lee, Keejun Han and Mun Y. Yi, <b>Incorporating Distinct Opinions in Content Recommender System</b></li>
-			 <li>Paper 87: Shuhei Shogen, Toshiyuki Shimizu and Masatoshi Yoshikawa, <b>Enrichment of Academic Search Engine Results Pages by Citation-based Graphs</b></li>
-			 <li>Paper 90: Zak Waters, Vitomir Kovanovic, Kirsty Kitto and Dragan Gasevic, <b>Structure matters: Adoption of structured classification approach in the context of cognitive presence classification</b></li>
-			 </ul>
-			</p>
-			<br>
- -->
+		
 			<a name="posters"></a>
 			<h3>Poster &amp; Demo Session (Wednesday  5.00pm-7.00pm)</h3>
 			 <p>
@@ -360,7 +341,7 @@
 <p>The ADCS 2017 Conference Banquet will take place at the <a href="http://www.kookaburrariverqueens.com">Kookaburra River Queen</a>, an iconic restaurant on board of an authentic paddlewheeler. The dinner cruise on the Brisbane River will offer a spectacular and memorable experience and participants will have the chance to take in the best views Brisbane has to offer while enjoying the changing city sights and the fine food served on board.</br>One Banquet ticket is included in every registration. If you need more tickets, please contact the organisers.</p>
 			
 			</br>
-			<img src="img/kookaburra.jpg" class="img-rounded" alt="Kookaburra River Queen" width="100%" height="100%">
+			<img src="img/kookaburra.jpg" class="img-rounded" alt="Kookaburra River Queen" width="100%" height="100%">-->
 			<!--<div class="jumbotron" style="background-image: url('img/kookaburra.jpg'); background-size: 100% 100%; background-position: 0px 00px;">-->
 			
 			
@@ -370,59 +351,12 @@
           </div><!--/row-->
         </div><!--/.col-xs-12.col-sm-9-->
 
-        <div class="col-xs-6 col-sm-4 sidebar-offcanvas" id="sidebar">
-          <h3>Important Dates</h3>
-          <!-- <table class="table table-hover"> -->
-          <table class="table table-condensed">
-            <tbody>
-             <tr>
-                <td>Paper submission deadline</td>
-                <td><strike>26 Jul 2017</strike></td>
-              </tr>
-              <tr>
-                <td>Posters and demos submission deadline</td>
-                <td><strike>26 Jul 2017</strike></td>
-              </tr>
-              <tr>
-                <td>Notification of acceptance</td>
-                <td><strike>28 Aug 2017</strike></td>
-              </tr>
-              <tr>
-                <td>Camera ready</td>
-                <td><strike>4 Sep, 2017</strike></td>
-              </tr>
-              <tr>
-                <td>Early bird registration closes</td>
-                <td><strike>26 Sep 2017</strike></td>
-              </tr>
-              <tr>
-                <td>Normal Registration closes</td>
-                <td><strike>31 Oct 2017</strike></td>
-              </tr>
-              <tr>
-                <td>Late/On site Registration</td>
-                <td>1 Nov - 4 Dec 2017</td>
-              </tr>
-                <td>Conference</td>
-                <td>2-4 Dec, 2017</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h3>Latest on #ADCS2017</h3>
-
-          <a class="twitter-timeline" href="https://twitter.com/bevan_koopman" data-widget-id="578811861044350976">Tweets by @airs2017</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </div><!--/.sidebar-offcanvas-->
+        <div id="sidebarContent"></div>
       </div><!--/row-->
 
       <hr>
 
-      <footer>
-                        
-                        <a href="http://www.qut.edu.au"><img src="img/qut_logo_2lines.jpg"></a> <a href="http://www.sigir.org"><img src="img/acm_sigir_logo.png"></a> <a href="http://aehrc.com"><img src="img/AEHRC.png"></a><a href="http://www.springer.com"><img src="img/springer_logo.gif"></a>
-              
-      </footer>
+      <div id="footerContent"></div>
 
     </div><!--/.container-->
 

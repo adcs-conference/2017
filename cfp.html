@@ -18,26 +18,15 @@
     <link href="css/offcanvas.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="js/ie-emulation-modes-warning.js"></script><style type="text/css"></style>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-61068668-1', 'auto');
-      ga('send', 'pageview');
-
+    <script src="js/jquery.min.js"></script> 
+    <script> 
+    $(function(){
+      $("#navbarContent").load("navbar.html"); 
+      $("#sidebarContent").load("sidebar.html"); 
+      $("#footerContent").load("footer.html");
+    });
     </script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
@@ -52,19 +41,7 @@
           </button>
           <!-- <a class="navbar-brand" href="#">#ADCS2017</a> -->
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="cfp.html">Call for Papers</a></li>
-            <li><a href="program.html">Program</a></li>
-            <li><a href="keynotes.html">Keynotes</a></li>
-            <li><a href="loc_reg.html">Location & Registration</a></li>
-            <li><a href="committee.html">Committee</a></li>
-            <li><a href="sponsors.html">Sponsors</a></li>
-            <li><a href="students.html">Students</a></li>
-            <li><a href="presenters.html">Info for Presenters</a></li>
-          </ul>
-        </div><!-- /.nav-collapse -->
+        <div id="navbarContent"></div>
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
 <!-- 
@@ -88,126 +65,128 @@
           <div class="row">
             <div class="col-xs-12 col-sm-12">
               <h2>Call for Papers</h2>
-              <p>
-                The Asia Information Retrieval Societies Conference (ADCS) aims to bring together researchers and developers to exchange new ideas and latest achievements in the field of Information Retrieval. 
-              </p>
-              <p>
-                The scope of the conference covers applications, systems, technologies and theory aspects of Information Retrieval in text, audio, image, video and multimedia data.
-              </p>
-              <p>
-                Submissions can either be:
-                <ul>
-                  <li><strong>Full</strong> research paper &ndash; 12 pages (<a href="https://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0">Springer format</a>)</li>
-                  <li><strong>Short</strong> research paper &ndash; 6 pages (<a href="https://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0">Springer format</a>)</li>
-                  <li><strong>System demonstration</strong> papers &ndash; 4 pages + 2 pages of figures and tables (<a href="https://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0">Springer format</a>).</li>
+
+              <h3>Aim of the Symposium</h3>
+              
+              <p>ADCS 2017 is an opportunity for researchers and practitioners in
+              document management and information retrieval to meet and present
+              their work. The symposium aims to cover all aspects of Document
+              Computing - issues ranging from the fundamentals of document
+              architectures and standards for markup, through storage, management,
+              retrieval, authentication and workflow, to active and virtual
+              documents. The symposium emphasises both commercial and academic
+              issues by encouraging a variety of submissions.</p>
+               
+              <h3>Topics of Interest</h3>
+              
+              <p>The symposium topics include (but are not restricted to) the following:
+              <ul>
+                <li>Cognitive Aspects of Documents</li>
+                <li>Digital Libraries</li>
+                <li>Document Databases</li>
+                <li>Document Standards (XML, SGML, etc.)</li>
+                <li>Document Summarisation</li>
+                <li>Enterprise Search </li>
+                <li>Evaluation</li>
+                <li>Information Retrieval</li>
+                <li>Multimedia Document Management</li>
+                <li>Multimedia Resource Discovery</li>
+                <li>Natural Language Techniques and Documents</li>
+                <li>Personalised Documents</li>
+                <li>Retrieval Models and Ranking</li>
+                <li>Search Engine Architectures and Scalability</li>
+                <li>User Studies Involving Documents</li>
+                <li>Web Documents</li>
+                <li>Web Search</li>
                 </ul>
               </p>
-              <p>
-                The technical areas covered include, but are not limited to, the following:
-                <ul>
-                  <li>IR Models and Theories</li>
-                  <li>IR Evaluation</li>
-                  <li>Search Engine Scalability</li>
-                  <li>Web IR and Social Media Search</li>
-                  <li>Query Analysis and Query Understanding</li>
-                  <li>User Study and Interactive IR</li>
-                  <li>Database IR and Structured Data</li>
-                  <li>Multimedia IR, Multilingual IR, Spoken IR</li>
-                  <li>Location-aware IR and Mobile IR</li>
-                  <li>Natural Language Processing for IR</li>
-                  <li>Filtering and Recommending</li>
-                  <li>Machine Learning, Clustering and Data Mining for IR</li>
-                  <li>IR Applications (e.g. Legal IR, Medical/Biomedical IR)</li>
-                </ul>
-              </p>
-              <p>
-                The ADCS 2017 proceedings will be published as a Springer’s LNCS volume.
-                </p>
+               
+              <h3>Submissions</h3>
+              
+               
+              <h4>Full papers</h4>
+              <p><strong>8 pages</strong> including all
+              references. Full papers should describe new contributions or analyse research
+              issues. Submissions should be at most eight pages long (around 4000
+              words); over-length submissions risk immediate rejection. Refer to the
+              guidelines for papers for details of the required format.</p>
+               
+              <h4>Short papers, Posters and Industry Status Reports</h4>
+              <p><strong>4 pages</strong>
+              including references. To encourage participation by industry and to provide a place for work
+              of a more speculative nature, ADCS invites submissions for short
+              papers, up to a maximum of four pages (around 2000 words). A typical
+              proposal might describe a leading-edge solution to a practical problem
+              in document management. Short papers follow the same format as for
+              full papers.</p>
+
+              <h4>Paper Formatting and Submission</h4>
+              <p>Manuscripts should be submitted electronically, in PDF
+              format and formatted using the <a href="http://www.acm.org/sigs/publications/proceedings-templates">ACM camera-ready templates</a>.</p> 
+              <p>Papers will be submitted using <a href="https://easychair.org/conferences/?conf=adcs2017">Easy Chair</a>.</p>
+
+              <h4>Paper Reviewing</h4>
+              <p>All submissions will be fully refereed using a
+              double blind refereeing process, at their full published length, and
+              will comply with DEST criteria for fully-refereed conference papers
+              (category E1). </p>
+
+              <h4>Publishing and Attendence</h4>
+              <p>Submissions must be original work, not previously published
+              elsewhere, and not currently submitted to any other conference or
+              journal. </p>
+
+              <p>Submission of a paper should be regarded as an undertaking that,
+              should the paper be accepted, at least one of the authors will attend
+              the symposium to present the work. Note also that it is insufficient
+              for an author to register as
+              fulfilling this obligation.  Authors of accepted papers will have to
+              sign the ACM rights management form to comply with publication in the
+              ACM digital library. For more information see the ACM authors page.</p>
+
+              <p>Electronic copies of accepted papers will be made available
+              through the ACM Digital Library as part of the ICPS
+              collection. </p>
+             
+              
+
+
+
+              
+               
+              <h3>Program Cimmitee</h3>
+            
+               
+              <h4>General Chairs</h4>
+              <ul>
+                <li>Mark Carman, Monash University</li>
+                <li>Bevan Koopman, CSIRO</li>
+                <li>Guido Zuccon, Queensland University of Technology</li>
+              </ul>   
+               
+              <h4>Program Chairs</h4>
+              <ul>
+                <li>Mark Carman, Monash University</li>
+                <li>Bevan Koopman, CSIRO</li>
+                <li>Guido Zuccon, Queensland University of Technology</li>
+                <li>More to come...</li>
+              </ul>
+
+
+
+          
                 
-              <h3>Online Submission</h3>  
-              <p>
-                Paper submissions must be completed electronically and in PDF format and should be submitted through the <strong><a href="https://easychair.org/conferences/?conf=airs2017">ADCS 2017 EasyChair submission system</a></strong> submission system. All papers should be formatted using <a href="http://www.springer.de/comp/lncs/authors.html">Springer's manuscript submission guidelines</a>.</p>
-                <p>The paper selection will follow a standard <strong>double-blind</strong> reviewing process. </p>
-                </br><p>Papers submission deadlines are as follow:</p>
-                <table class="table table-condensed">
-            <tbody>
-              <tr>
-                <td>Paper submission deadline</td>
-                <td><strike>26 Jul 2017</strike><br> <small><a href="http://www.timeanddate.com/time/zones/aoe">AoE timezone</a></small></td>
-              </tr>
-              <tr>
-                <td>Posters and demos submission deadline</td>
-                <td><strike>26 Jul 2017</strike><br> <small><a href="http://www.timeanddate.com/time/zones/aoe">AoE timezone</a></small></td>
-              </tr>
-              <tr>
-                <td>Notification of acceptance</td>
-                <td><strike>28 Aug 2017</strike></td>
-              </tr>
-              <tr>
-                <td>Camera ready</td>
-                <td><strike>4 Sep, 2017</strike></td>
-              </tr>
-            </tbody>
-          </table>
             </div><!--/.col-xs-6.col-lg-4-->
             
           </div><!--/row-->
         </div><!--/.col-xs-12.col-sm-9-->
 
-       <div class="col-xs-6 col-sm-4 sidebar-offcanvas" id="sidebar">
-          <h3>Important Dates</h3>
-          <!-- <table class="table table-hover"> -->
-          <table class="table table-condensed">
-            <tbody>
-              <tr>
-                <td>Paper submission deadline</td>
-                <td><strike>26 Jul 2017</strike></td>
-              </tr>
-              <tr>
-                <td>Posters and demos submission deadline</td>
-                <td><strike>26 Jul 2017</strike></td>
-              </tr>
-              <tr>
-                <td>Notification of acceptance</td>
-                <td><strike>28 Aug 2017</strike></td>
-              </tr>
-              <tr>
-                <td>Camera ready</td>
-                <td><strike>4 Sep, 2017</strike></td>
-              </tr>
-              <tr>
-                <td>Early bird registration closes</td>
-                <td> <strike>26 Sep 2017</strike></td>
-              </tr>
-              <tr>
-                <td>Normal Registration closes</td>
-                <td><strike>31 Oct 2017</strike></td>
-              </tr>
-              <tr>
-                <td>Late/On site Registration</td>
-                <td>1 Nov - 4 Dec 2017</td>
-              </tr>
-              <tr>
-                <td>Conference</td>
-                <td>2-4 Dec, 2017</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h3>Latest on #ADCS2017</h3>
-
-          <a class="twitter-timeline" href="https://twitter.com/bevan_koopman" data-widget-id="578811861044350976">Tweets by @airs2017</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </div><!--/.sidebar-offcanvas-->
+       <div id="sidebarContent"></div>
       </div><!--/row-->
 
       <hr>
 
-      <footer>
-                        
-                        <a href="http://www.qut.edu.au"><img src="img/qut_logo_2lines.jpg"></a> <a href="http://www.sigir.org"><img src="img/acm_sigir_logo.png"></a> <a href="http://aehrc.com"><img src="img/AEHRC.png"></a><a href="http://www.springer.com"><img src="img/springer_logo.gif"></a>
-              
-      </footer>
+      <div id="footerContent"></div>
 
     </div><!--/.container-->
 
