@@ -1,4 +1,4 @@
-#ADCS2017
+# ADCS2017
 
 Website content for the official site of the Australasian Document Computing Symposium, 7-8 December 2017, Brisbane, Queensland, Australia.
 
