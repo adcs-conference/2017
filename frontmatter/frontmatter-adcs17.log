@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.10)  27 NOV 2017 17:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.10)  28 NOV 2017 15:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -285,22 +285,32 @@ Package pdftex.def Info: icps-logo.pdf used on input line 85.
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./qut_l
 ogo_2lines.jpg> <./redbubble.png> <./sigir-logo.png> <./csiro-logo.pdf> <./icps
--logo.pdf>] [2] [3] [4] (./frontmatter-adcs17.aux) ) 
+-logo.pdf>] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 141--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--164
+
+ []
+
+[3] [4] (./frontmatter-adcs17.aux) ) 
 Here is how much of TeX's memory you used:
  2089 strings out of 493014
  30670 string characters out of 6133351
- 99738 words of memory out of 5000000
+ 98738 words of memory out of 5000000
  5626 multiletter control sequences out of 15000+600000
  6358 words of font info for 23 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,4n,23p,472b,173s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on frontmatter-adcs17.pdf (4 pages, 891087 bytes).
+</usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr12.pfb>
+Output written on frontmatter-adcs17.pdf (4 pages, 889131 bytes).
 PDF statistics:
  51 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream
