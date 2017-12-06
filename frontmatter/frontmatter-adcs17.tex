@@ -1,0 +1,182 @@
+%%%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%% Front matter for ADCS conference 
+%% Taken from Laurence Park's files from ADCS 2015
+%%%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\documentclass[a4paper]{article}
+\usepackage{multicol} % needed for the list of participants, index
+\usepackage[bottom=3cm]{geometry} % needed to change margins for articles
+\usepackage{graphicx}
+
+\pagestyle{plain}
+\thispagestyle{empty}
+\pagenumbering{roman}
+
+
+\begin{document}
+
+
+\vspace{1in}
+
+
+%\begin{center}
+%{\Large\sc
+%Conferences in Research and Practice in \\
+%Information Technology \\
+
+%\
+
+%Volume 1}
+%\end{center}
+
+\begin{center}
+\noindent \Huge{\sc ADCS 2017} \\
+\vspace{5em}
+\noindent {\huge \sc Proceedings of the 22nd Australasian \\[.5em] Document Computing Symposium}
+
+
+\vspace{2em}
+
+\noindent { \Large \bf Brisbane, Queensland, Australia, December 7-8, 2017\\[2em]}
+
+\noindent{ \Large Bevan Koopman, Guido Zuccon and Mark Carman, Eds.} \\
+\noindent{\Large ISBN: 978-1-4503-6391-4}
+
+\end{center}
+
+% -- Pre-2010 version, including the \raisebox for the ACSW logo
+% -- For ACSW 2010 acsw.pdf was replaced with a new logo 
+% -- new-acsw-large.png
+%
+%\begin{figure}[b]
+%\centerline{\epsfig{file=../../General/ACS2spot.pdf, width=0.2\linewidth}
+%\hspace{0.2in}
+%\raisebox{6ex}{\epsfig{file=../../General/acsw.pdf, width=0.30\linewidth}}
+%\hspace{0.2in}
+%\epsfig{file=../../General/CORElogo.pdf, width=0.25\linewidth}
+%}
+%\end{figure}
+
+%ACM_ICPS_v.2B.jpg
+
+\vspace{25pt}
+
+
+\begin{center}
+\includegraphics[width=0.3\textwidth]{qut_logo_2lines.jpg} \hspace{4em}
+\includegraphics[width=0.4\textwidth]{redbubble.png} 
+
+
+\vspace{1em}
+
+\includegraphics[width=0.3\textwidth]{sigir-logo.png} \hspace{4em}
+\includegraphics[width=0.3\textwidth]{csiro-logo}
+\end{center}
+
+\vspace{1in}
+
+\hfill\includegraphics[width=0.2\textwidth]{icps-logo}
+
+\newpage
+
+\section*{Preface}
+
+These proceedings contain the papers presented at ADCS 2017, the Twenty Second 
+Australasian Document Computing Symposium, hosted by Queensland University of Technology 
+and held in Brisbane, QLD, Australia.
+
+Of the 16 papers submitted, 6 were accepted as full papers and 6 were accepted
+as short papers. The full  written  version  of each submission received at
+least three anonymous reviews by independent, qualified international experts
+in the area. The review process followed a fully double-blind procedure. Dual submissions were explicitly prohibited.  The accepted
+contributions cover a diverse range of topics in document computing including efficiency, user models and evaluation, summarisation, and information retrieval
+models.
+
+The symposium includes formal presentations which allow for questions and
+discussions, but also opportunities to share ideas during interactive sessions
+and informal gatherings. Following the success of this format in ADCS 2016, we also invited attendees to present unrefereed posters in an informal poster session. This addition was suggested by ADCS steering committee to increase the chance for researchers, specifically PhD students, to present their early work for feedback. The titles for the posters are listed on the symposium website but not published in the proceedings. Once again we have collocated with the Australasian
+Language Technology Workshop (ALTA), sharing all keynote talks (two from ADCS and two from ALTA), a joint presentation session, poster session, and social events.
+
+We would like to thank the members of the program committee for their
+commitment to quality reviews. We would also like to thank ACM SIGIR, CSIRO Data61, Redbubble and QUT 
+ for their generous support of the event. We would
+also like to thank our keynote speakers, Dan Russell and Victor Kovalev, for sharing their views of new
+research trends in Information Retrieval and Data Science. Finally, we thank all attendees of
+ADCS 2017 who made the trip to Brisbane.
+
+\vspace{1cm}
+
+\begin{flushright}\noindent
+\textbf{Bevan Koopman}\\
+CSIRO \\[.1in]
+\textbf{Mark Carman}\\
+Monash University\\[.1in]
+\textbf{Guido Zuccon}\\
+Queensland University of Technology \\[.1in]
+ADCS 2017 Programme Chairs\\
+December 2017
+\end{flushright}
+
+\newpage
+
+
+\section*{Organising Committee}
+
+
+\subsection*{General Chair}
+
+Guido Zuccon, Queensland University of Technology
+
+
+\subsection*{Programme Chairs}
+
+Mark Carman, Monash University\\
+Bevan Koopman, CSIRO\\
+
+\subsection*{Programme Committee}
+Peter Bailey, Microsoft (Bing)\\
+Peter Bruza, Queensland University of Technology\\
+Matt Crane, University of Waterloo\\
+Shane Culpepper, RMIT University\\
+Sally Jo Cunningham, Waikato University\\
+Gianluca Demartini, The University of Queensland\\
+Jia Tina Du, University of South Australia\\
+Shlomo Geva, Queensland University of Technology\\
+David Hawking, Microsoft (Bing)\\
+Sarvnaz Karimi, CSIRO\\
+Alistair Moffat, The University of Melbourne\\
+Laurence Park, University of Western Sydney\\
+Falk Scholer, RMIT University\\
+Laurianne Sitbon, Queensland University of Technology\\
+James A. Thom, RMIT University\\
+Paul Thomas, Microsoft (Bing)\\
+Andrew Trotman, University of Otago\\
+Andrew Turpin, The University of Melbourne\\
+Alexandra Uitdenbogerd, RMIT University\\
+
+\newpage
+
+\section*{List of Accepted Papers}
+
+\begin{enumerate}
+\item Benham, Culpepper. Risk-Reward Trade-offs in Rank Fusion
+\item Chappell, Geva, Hogan. K-Means Clustering of Biological Sequences
+\item Crimp, Trotman. Automatic Term Reweighting for Query Expansion
+\item De Vine, Geva, Bruza. Efficient Analogy Completion with Word Embedding Clusters
+\item Hawking, Billerbeck. Efficient In-Memory, List-Based Text Inversion
+\item Krishnan, Moffat, Zobel. A Taxonomy of Query Auto Completion Modes
+\item Lim, Carman. Annotator Expertise and Information Quality in Annotation-based Retrieval
+\item Mackenzie, Scholer, Culpepper. Early Termination Heuristics for Score-at-a-Time Index Traversal
+\item Maxwell, Bailey, Hawking. Large-scale Generative Query Autocompletion
+\item Seneviratne, Geva, Zuccon, Trotman. An Initial Study of Anchor Selection in Patent Link Discovery
+\item Thomas, Scholer, Bailey, Moffat. Tasks, Queries, and Rankers in Pre-Retrieval Performance Prediction
+\item Zhang, Zhang, Chan. A Word-Character Convolutional Neural Network for Language-Agnostic Twitter Sentiment Analysis
+\end{enumerate}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+
